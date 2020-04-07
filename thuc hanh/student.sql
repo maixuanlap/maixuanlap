@@ -4,4 +4,3 @@ create table student(
         address varchar(50),
         phone varchar(20),
         PRIMARY KEY (student_id));
-        
