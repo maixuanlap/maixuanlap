@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document    : ElectionSurvey_schema.xsd
+    Author      : vincent
+    Description :
+        This document defines a schema for collecting event details
+        to manage an event.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xmlpowercorp"
+            xmlns="http://xmlpowercorp"
+            elementFormDefault="qualified">
+    <!--definition for simple elements-->
+    <xsd:element name="Customer" type="xsd:string"/>
+    <xsd:element name="Venue" type="xsd:string"/>
+    <xsd:element name="Date" type="xsd:date"/>
+    <xsd:element name="ContractNumber" type="xsd:long"/>
+    <xsd:element name="Address" type="xsd:string"/>
+    <xsd:element name="TechDelivery" type="xsd:string"/>
+    <xsd:element name="Entertainment" type="xsd:string"/>
+    <xsd:element name="VenueBooking" type="xsd:string"/>
+    <xsd:element name="Themeing" type="xsd:string"/>
+
+    <!--definition for simple types-->
+    <xsd:element name="NoOfGuests">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:integer">
+                <xsd:minInclusive value="0"/>
+                <xsd:maxInclusive value="2000"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!--definition for complex elements-->
+    <xsd:element name="Event">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Customer"/>
+                <xsd:element ref="Venue"/>
+                <xsd:element ref="Date"/>
+                <xsd:element ref="NoOfGuests"/>
+                <xsd:element ref="ContractNumber"/>
+                <xsd:element ref="Address"/>
+            </xsd:sequence>
+            <xsd:attribute name="orderid" type="xsd:string" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Service">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="TechDelivery"/>
+                <xsd:element ref="Entertainment"/>
+                <xsd:element ref="VenueBooking"/>
+                <xsd:element ref="Themeing"/>
+            </xsd:sequence>
+            <xsd:attribute name="category" type="xsd:string" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="EventManager">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="Event" minOccurs="1" maxOccurs="unbounded"/>
+                <xsd:element ref="Service" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
