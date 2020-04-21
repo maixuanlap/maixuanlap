@@ -1,0 +1,11 @@
+Arrtist{
+    color: blue;
+}
+*{
+    display: block;
+
+}
+[id=favorite]{
+    background-color: lightblue;
+    color: blue;
+}

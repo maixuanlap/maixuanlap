@@ -1,0 +1,25 @@
+xsampdoc{
+    display: block;
+    margin: 200px;
+    height: 50px;
+    width: 160px;
+}
+greeting{
+    color: red;
+    font-size: 36px;
+;
+}
+[class=default]
+{
+    display: block;
+    color: black;
+    font-size: 26px;
+}
+[class=good]{
+
+    font-size: 21px;
+    color: blue;
+}
+question{
+    font-size: 26px;
+}
