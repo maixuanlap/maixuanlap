@@ -20,6 +20,10 @@ namespace thi
             this.price = price;
             this.producer = producer;
         }
+        public override string ToString()
+        {
+            return "Id: " + this.id + "\tName: " + this.name + "\tPrice: " + this.price + "\tProducer:  " + this.producer;
+        }
         public abstract double ComputeTax();
     }
 }
