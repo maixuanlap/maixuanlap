@@ -1,0 +1,47 @@
+div.company-info img {
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+div.company-info img:hover {
+    /*
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    */
+    opacity: 1;
+}
+a.footertel {
+    color: #d9f6ff;
+    text-decoration:none;
+}
+a.footertel:hover,
+a.footertel:focus,
+a.footertel:active {
+    color: #dba510;
+    text-decoration:none;
+}
+p.contactcenter {
+    /*font-size:1.05em;*/
+    padding-bottom:15px;
+    color: #d9f6ff;
+    letter-spacing:-1px;
+}
+p.contactcenter img {
+    width:16px!important;
+    margin:0!important;
+    display:inline!important;
+}
+p.contactcenter a {
+    font-size:1.1em;
+    font-weight: bold;
+    font-family: "DiavloLight", "OpenSans-Light", Arial, Helvetica, sans-serif;
+    color: #d9f6ff;
+    letter-spacing:0px;
+}
+p.contactcenter a:hover,
+p.contactcenter a:focus,
+p.contactcenter a:active {
+    color: #dba510;
+}
