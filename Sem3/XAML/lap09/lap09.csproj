@@ -126,7 +126,6 @@
     <Compile Include="Model\Sould.cs" />
     <Compile Include="Model\SouldMananger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
