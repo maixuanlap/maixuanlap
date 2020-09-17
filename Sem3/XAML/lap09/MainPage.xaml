@@ -5,7 +5,7 @@
     xmlns:local="using:lap09"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:data="using:lap09.Model"
+    xmlns:data="using:lap09.Model" xmlns:data1="using:Lab09.Model"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -86,10 +86,10 @@
                               AllowDrop="True"
                               Drop="SoundGridView_Drop"
                               DragOver="SoundGridView_DragOver"
-                              ItemsSource="{x:Bind Soulds}"
+                              ItemsSource="{x:Bind Sounds}"
                               ItemClick="SoundGridView_ItemClick">
                         <GridView.ItemTemplate>
-                            <DataTemplate x:DataType="data:Sound">
+                            <DataTemplate x:DataType="data1:Sound">
                                 <Image Name="MyImage" Height="112" Width="101" Source="{x:Bind ImageFile}"/>
                             </DataTemplate>
                         </GridView.ItemTemplate>
