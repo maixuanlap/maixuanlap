@@ -1,9 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using ConsonoCrafts.WebSite.Model;
+using ConsonoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +28,11 @@ namespace ConsonoCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor();
+            services.AddTransient<JsonFileProductService>();
+            services.AddControllers();
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +59,14 @@ namespace ConsonoCrafts.WebSite
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
+                endpoints.MapBlazorHub();
+               // endpoints.MapGet("/products",(context)=>
+               // {
+               //    var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
+               //  var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+               //return context.Response.WriteAsync(json);
+               //});
             });
         }
     }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsonoCrafts.WebSite", "ConsonoCrafts.WebSite\ConsonoCrafts.WebSite.csproj", "{A69822E0-4D30-4FBC-8A13-D52A489DADB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsonoCrafts.WebSite", "ConsonoCrafts.WebSite\ConsonoCrafts.WebSite.csproj", "{9629075A-5894-4AFD-A24F-8E0E04B89A3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A69822E0-4D30-4FBC-8A13-D52A489DADB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A69822E0-4D30-4FBC-8A13-D52A489DADB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A69822E0-4D30-4FBC-8A13-D52A489DADB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A69822E0-4D30-4FBC-8A13-D52A489DADB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9629075A-5894-4AFD-A24F-8E0E04B89A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9629075A-5894-4AFD-A24F-8E0E04B89A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9629075A-5894-4AFD-A24F-8E0E04B89A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9629075A-5894-4AFD-A24F-8E0E04B89A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C5F051BE-875B-4820-B686-487E7D19EB47}
+		SolutionGuid = {C7C54394-28A7-4502-9B8F-6AD1859EF8F6}
 	EndGlobalSection
 EndGlobal
