@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView rvNews;
-    List<Weather> weathers;
+    List<Weather> weather;
     WeatherAdapter adapter;
     TextView tvStatus,tvTemp;
 
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         tvStatus = findViewById(R.id.tvStatus);
         tvTemp = findViewById(R.id.tvTemp);
-        weathers = new ArrayList<>();
-        adapter = new WeatherAdapter(MainActivity.this,weathers);
+        weather = new ArrayList<>();
+        adapter = new WeatherAdapter(MainActivity.this,weather);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false);
         rvNews = findViewById(R.id.rvList);
         rvNews.setLayoutManager(layoutManager);
@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Weather>> call, Response<List<Weather>> response) {
                 if(response.body() != null){
-                    weathers = response.body();
-                    adapter.ReloadData(weathers);
-                    tvStatus.setText(weathers.get(0).getWeatherIcon());
-                    tvTemp.setText(String.valueOf((int) weathers.get(0).getTemperature().getValue()) + "\u00B0");
+                    weather = response.body();
+                    adapter.ReloadData(weather);
+                    tvStatus.setText(weather.get(0).getWeatherIcon());
+                    tvTemp.setText(String.valueOf((int) weather.get(0).getTemperature().getValue()) + "\u00B0");
                 }
 
             }

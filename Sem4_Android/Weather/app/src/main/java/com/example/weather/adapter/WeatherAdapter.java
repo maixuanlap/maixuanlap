@@ -34,13 +34,13 @@ public class WeatherAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = activity.getLayoutInflater().inflate(R.layout.item_home,parent,false);
-        WheatherHolders holders =new WheatherHolders(itemView);
+        WeatherHolders holders =new WeatherHolders(itemView);
         return holders;
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        WheatherHolders hd = (WheatherHolders)holder;
+        WeatherHolders hd = (WeatherHolders)holder;
         Weather model = weathers.get(position);
         String dateset = convertTime(model.getDateTime());
         hd.tvDateTime.setText(dateset);
@@ -58,11 +58,11 @@ public class WeatherAdapter extends RecyclerView.Adapter {
         return weathers.size();
     }
 
-    public class WheatherHolders extends RecyclerView.ViewHolder{
+    public class WeatherHolders extends RecyclerView.ViewHolder{
         TextView tvDateTime,tvValue,tvStatus,tvTemp;
         ImageView ivIcon;
 
-        public WheatherHolders(@NonNull View itemView) {
+        public WeatherHolders(@NonNull View itemView) {
             super(itemView);
             tvDateTime =itemView.findViewById(R.id.tvTime);
             tvValue = itemView.findViewById(R.id.tvValue);
