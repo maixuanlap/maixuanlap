@@ -17,8 +17,8 @@
         android:id="@+id/tvName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="LẬP"
-        android:layout_weight="70"/>
+        android:text="Xuân lập"
+        android:layout_weight="60"/>
 
     <TextView
         android:id="@+id/tvQuantity"
@@ -26,5 +26,4 @@
         android:layout_height="wrap_content"
         android:text="Mai"
         android:layout_weight="20"/>
-
 </LinearLayout>
