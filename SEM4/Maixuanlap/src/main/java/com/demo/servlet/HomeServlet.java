@@ -36,10 +36,10 @@ public class HomeServlet extends HttpServlet {
     private void addProduct(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
         String name = request.getParameter("name");
         int price = Integer.parseInt(request.getParameter("price"));
-        int quantity = Integer.parseInt(request.getParameter("quantity"));
-        String image = request.getParameter("image");
-        ProductEntity products = new ProductEntity(name,price,quantity,image);
-        dao.insertProduct(products);
+        String des = request.getParameter("description");
+        String brand = request.getParameter("brand");
+        ProductEntity product = new ProductEntity(name,price,des,brand);
+        dao.insertProduct(product);
         response.sendRedirect("product");
     }
 

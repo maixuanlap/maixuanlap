@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 11/05/2021
-  Time: 3:17 CH
-  To change this template use File | Settings | File Templates.
---%>
+
 <!doctype html>
 <html class="no-js h-100" lang="en">
 <head>
@@ -63,11 +57,19 @@
                             <div class="card-body">
                                 <form class="addphone" method="post" action="home">
                                     <input class="form-control form-control-lg mb-3" type="text" placeholder="Name Phone" name="name">
-                                    <input class="form-control form-control-lg mb-3" type="number" placeholder="Price" name="price">
-                                    <input class="form-control form-control-lg mb-3" type="number" placeholder="Quantity" name="quantity">
-                                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Image" name="image">
+                                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Price" name="price">
+                                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Description" name="description">
+                                    <select class="form-control form-control-lg mb-3" id="cars" name="brand">
+                                        <option value="apple">Apple</option>
+                                        <option value="samsung">Samsung</option>
+                                        <option value="nokia">Nokia</option>
+                                        <option value="others">Others</option>
+                                    </select><br/>
                                     <input class="btn btn-primary" style="float: right" type="submit" value="Submit">
                                 </form>
+                                <button>
+                                    <a href="addphone.jsp">Reset</a>
+                                </button>
                             </div>
                         </div>
                     </div>

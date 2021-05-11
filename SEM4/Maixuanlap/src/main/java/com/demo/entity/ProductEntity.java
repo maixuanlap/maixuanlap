@@ -15,29 +15,29 @@ public class ProductEntity {
     @Column(name = "price")
     private int price;
 
-    @Column(name = "quantity")
-    private int quantity;
+    @Column(name = "description")
+    private String description;
 
-    @Column(name = "image")
-    private String image;
+    @Column(name = "brand")
+    private String brand;
 
 
     public ProductEntity() {
     }
 
-    public ProductEntity(int id, String name, int price, int quantity, String image) {
+    public ProductEntity(int id,String name, int price, String description, String brand) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
-        this.image = image;
+        this.description = description;
+        this.brand = brand;
     }
 
-    public ProductEntity(String name, int price, int quantity, String image) {
+    public ProductEntity(String name, int price, String description, String brand) {
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
-        this.image = image;
+        this.description = description;
+        this.brand = brand;
     }
 
     public int getId() {
@@ -64,19 +64,19 @@ public class ProductEntity {
         this.price = price;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getDescription() {
+        return description;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getImage() {
-        return image;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }

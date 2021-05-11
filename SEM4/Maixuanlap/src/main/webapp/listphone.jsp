@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 11/05/2021
-  Time: 3:17 CH
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -45,7 +39,6 @@
         </aside>
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
             <div class="main-navbar sticky-top bg-white">
-                <!-- Main Navbar -->
                 <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
                     <nav class="nav">
                         <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
@@ -72,9 +65,9 @@
                                     <tr>
                                         <th scope="col" class="border-0">#</th>
                                         <th scope="col" class="border-0">Name</th>
-                                        <th scope="col" class="border-0">Image</th>
+                                        <th scope="col" class="border-0">brand</th>
                                         <th scope="col" class="border-0">Price</th>
-                                        <th scope="col" class="border-0">Quantity</th>
+                                        <th scope="col" class="border-0">description</th>
                                     </tr>
                                     </thead>
                                     <c:forEach var="p" items="${requestScope.products}">
@@ -82,11 +75,9 @@
                                         <tr>
                                             <td style="padding-top:45px">${p.id}</td>
                                             <td style="padding-top:45px">${p.name}</td>
-                                            <td>
-                                                <img src="${p.image}" height="100" width="150">
-                                            </td>
+                                            <td style="padding-top:45px">${p.brand}</td>
                                             <td style="padding-top:45px">${p.price}</td>
-                                            <td style="padding-top:45px">${p.quantity}</td>
+                                            <td style="padding-top:45px">${p.description}</td>
                                         </tr>
                                         </tbody>
                                     </c:forEach>
@@ -96,14 +87,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                function showMess(id) {
-                    var option = confirm('are you sure to delete');
-                    if(option === true){
-                        window.location.href = 'delete?sid=' + id;
-                    }
-                }
-            </script>
         </main>
     </div>
 </div>

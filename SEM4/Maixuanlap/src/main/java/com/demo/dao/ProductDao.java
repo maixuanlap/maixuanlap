@@ -19,16 +19,6 @@ public class ProductDao {
         return list;
     }
 
-
-    public ProductEntity getProductById(int _id) {
-        EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        ProductEntity product = em.createQuery("select c from ProductEntity c where c.id = id", ProductEntity.class).getSingleResult();
-        em.getTransaction().commit();
-        em.close();
-        return product;
-    }
-
     public void insertProduct(ProductEntity product) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
@@ -45,8 +35,8 @@ public class ProductDao {
         if (productUpdate != null) {
             productUpdate.setName(product.getName());
             productUpdate.setPrice(product.getPrice());
-            productUpdate.setQuantity(product.getQuantity());
-            productUpdate.setImage(product.getImage());
+            productUpdate.setDescription(product.getDescription());
+            productUpdate.setBrand(product.getBrand());
         }
         em.getTransaction().commit();
         em.close();
@@ -74,5 +64,4 @@ public class ProductDao {
         em.close();
         return productEntity;
     }
-
 }
