@@ -3,7 +3,4 @@
     <excludes>
         <pattern>/api*</pattern>
     </excludes>
-    <decorator name="template" page="template.jsp">
-        <pattern>/*</pattern>
-    </decorator>
 </decorators>

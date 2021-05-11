@@ -25,9 +25,7 @@
 <body class="h-100">
 <div class="container-fluid">
     <div class="row">
-        <!-- Main Sidebar -->
         <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
-
             <div class="nav-wrapper">
                 <ul class="nav flex-column">
                     <li class="nav-item">
