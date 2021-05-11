@@ -62,7 +62,7 @@
                         <div class="card card-small mb-3">
                             <div class="card-body">
                                 <form class="addphone" method="post" action="home">
-                                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Name Product" name="name">
+                                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Name Phone" name="name">
                                     <input class="form-control form-control-lg mb-3" type="number" placeholder="Price" name="price">
                                     <input class="form-control form-control-lg mb-3" type="number" placeholder="Quantity" name="quantity">
                                     <input class="form-control form-control-lg mb-3" type="text" placeholder="Image" name="image">
