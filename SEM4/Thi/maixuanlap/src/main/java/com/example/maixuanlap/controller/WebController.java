@@ -26,12 +26,12 @@ public class WebController {
         return "index";
     }
 
-    @GetMapping({"/add"})
+    @GetMapping({"/create-employee"})
     public String createIndex() {
-        return "add";
+        return "create-employee";
     }
 
-    @PostMapping({"/add"})
+    @PostMapping({"/create-employee"})
     public String create(@RequestParam Map<String, String> param) {
         employeeService.createEmployee(new EmployeeEntity(param.get("name"), Integer.parseInt(param.get("wage"))));
         return "redirect:index";

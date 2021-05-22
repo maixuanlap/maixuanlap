@@ -19,7 +19,7 @@
     <div class="nav-wrapper">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="add">
+                <a class="nav-link active" href="create-employee">
                     <i class="material-icons">note_add</i>
                     <span>Add Wage</span>
                 </a>
@@ -35,7 +35,7 @@
             <th>Name</th>
             <th>Wage</th>
         </tr>
-        <c:forEach items="${products}" var="p">
+        <c:forEach items="${employees}" var="p">
             <tr>
                 <td>${p.id}</td>
                 <td>${p.name}</td>

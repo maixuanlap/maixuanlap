@@ -10,7 +10,7 @@
 <h1>Create</h1>
 
 <div class="w3-container">
-    <form method="post" action="/add">
+    <form method="post" action="/create-employee">
         <p>
             <label>Name</label>
             <input class="w3-input w3-border w3-round" name="name" type="text">
