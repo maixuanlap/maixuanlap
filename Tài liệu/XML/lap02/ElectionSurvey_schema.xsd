@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Document    : ElectionSurvey_schema.xsd
+    Author      : vincent
+    Description :
+        This document defines a schema for collecting voter details.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xmlpowercorp"
+            xmlns="http://xmlpowercorp"
+            elementFormDefault="qualified">
+    <xsd:element name="VoterDetails">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="VoterName" type="xsd:string"/>
+                <xsd:element name="Gender" type="xsd:string"/>
+                <xsd:element name="Age" type="xsd:integer"/>
+                <xsd:element name="DateOfBirth" type="xsd:date"/>
+                <xsd:element name="Profession" type="xsd:string"/>
+                <xsd:element name="PhoneNumber" type="xsd:long"/>
+                <xsd:element name="Address" type="xsd:string"/>
+                <xsd:element name="City" type="xsd:string"/>
+                <xsd:element name="State" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

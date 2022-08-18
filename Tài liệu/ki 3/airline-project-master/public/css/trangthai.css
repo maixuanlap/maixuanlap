@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font-size: 15px;
+    font-family: "OpenSans";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    background-color: #cccccc;
+}
+.box{
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 230px 0;
+}
+.box2{
+    margin-bottom: 40px;
+}
+.box1{
+    z-index: 2;
+    opacity: 0.9;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.parallax{
+    height: 100%;
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+}.hh{
+    background-color: white;
+ }
+ h3 {
+     text-align: center;
+     text-transform: uppercase;
+     color: white;
+     font-weight: bold;
+ }
+ .head{
+    padding: 30px 0;
+ }

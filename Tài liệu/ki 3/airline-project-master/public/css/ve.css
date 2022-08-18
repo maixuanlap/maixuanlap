@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font-size: 15px;
+    font-family: "OpenSans";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    background-color: #cccccc;
+}
+.box1{
+    background-color: #fdfdfd;
+    margin: 3em 0;
+    padding: 3em 0;
+}
+.box1 hr{
+    border-top: 2px solid rgb(62,44,100);
+    width: 95%;
+    opacity: 0.6;
+}
+.box3{
+    padding-left: 3em;
+}
+.parallax{
+    height: 100%;
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+

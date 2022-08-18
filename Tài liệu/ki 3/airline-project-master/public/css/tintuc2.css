@@ -1,0 +1,63 @@
+h3{
+    font-size: 36px;
+    text-align:center;
+    font-family: "DiavloLight", Arial;
+    color: #166987;
+    margin-left:25%;
+    margin-bottom: 15px!important;
+}
+.content{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    clear: both;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding-top: 50px;
+
+}
+.parallax {
+    padding-top: 20px;
+    height: 100%;
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+.row img{
+    width: 100%;
+    display: block;
+    margin: 10px auto 10px;
+}
+.contents p{
+    color: #333;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: left;
+}
+.contents ul li{
+    display: block;
+    margin: 0 0 10px;
+    padding-left: 10px;
+    position: relative;
+    font-size: 17px;
+}
+.contents ul li:before{
+    bottom: 0px;
+    color: rgb(22, 105, 135);
+    content: "•";
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 1em;
+    text-decoration: none !important;
+}
+.row span{
+    font-size: 20px;
+    color: #333;
+    margin:20px 10px 20px 30px;
+    text-align: center;
+    line-height: 22px;
+}

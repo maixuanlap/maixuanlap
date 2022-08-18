@@ -1,0 +1,279 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+label {
+    display: block;
+}
+
+.box{
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+.bo{
+    line-height: 1.5;
+    width: 100%;
+    border: 1px solid #ffffff;
+    overflow: visible;
+    background-color: #fff;
+    border-radius: 0.4em;
+    margin: 40px 0;
+    padding-left: 1em;
+}
+.bo b{
+    color: #c69500;
+}
+.bo p{
+    font-size: 14px;
+}
+.boc1{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 3em;
+}
+.box5 h3{
+    color: hsl(193,100%,29%);
+}
+.box4 img{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    margin: 50px 0;
+    border-radius: 5px;
+    background-color: #d4e7ee;
+    padding: 30px;
+}
+.box3 h5{
+    color: hsl(193,100%,29%);
+}
+.boc1 hr{
+    border-top: 2px solid rgb(62,44,100);
+    width: 95%;
+    opacity: 0.6;
+}
+.boc2{
+    margin-top: 3em;
+}
+.box2{
+    border-radius: 5px;
+    margin-top: 50px;
+    border:1px solid #ffffff;
+    height: 400px;
+    overflow-x:scroll;
+    background-color: #d4e7ee;
+    padding: 20px;
+}
+.box6{
+    margin-top: 3em;
+}
+.box7{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.box7:hover {
+    background-color: #45a049;
+}
+
+.box10{
+    background-color: #c69500;
+    border: none;
+    margin-right: 2em;
+    color: #0b2e13;
+    margin-top: auto;
+}
+.boc3{
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    margin-left: 2em;
+    padding-bottom: 2em;
+}
+.boc3 h5{
+    color: hsl(193,100%,29%);
+}
+.l1{
+    height: 100%;
+}
+.l1 p{
+    font-weight: normal;
+}
+.itinerary-part-header span{
+    font-size: 15px;
+    font-weight: 600;
+}
+.ducp-component-from-to .left-content {
+    padding-right: .5rem;
+}
+.from.left-content span{
+    font-size: 13.5px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: normal;
+    font-weight: 600;
+    float: left;
+    width: 70%;
+}
+.right-content{
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 30%;
+}
+.ducp-component-airport departure stacked{
+    width: 50%;
+}
+.ducp-component-airport.arrival.stacked{
+    float: right;
+    margin-right: 30px;
+}
+.ducp-component-from-to ducp-component-flight-route origin-destination{
+    width: 100%;
+}
+.duration-stop-details{
+    width: 100%;
+    color: hsl(0,0%,33%);
+    line-height: 19px;
+}
+.duration-stop-details span{
+    font-size: 13px;
+    margin-top: 10px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.segment-operated-by-list span {
+    font-size: 13px;
+    color: hsl(0,0%,33%);
+}
+.flight-number fits-row span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.itinerary-part-header{
+    margin-top: 15px;
+}
+.oo{
+    border: 1px solid white;
+    width:100% ;
+    height:50px;
+    border-radius:5px ;
+    margin-top: 10px;
+}
+.nguoi{
+    width: 50%;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+}
+.gia{
+    width: 50%;
+    text-align: right;
+    position: relative;
+    margin-top: -25px;
+    margin-left: 150px;
+    font-weight: 500;
+    float: right;
+    margin-right: 30px;
+}
+.gia1{
+    font-size: 15px;
+}
+.nguoi span{
+    margin-top: 10px;
+}
+.gia span{
+    margin-top: 10px;
+}
+span.kh{
+    color: hsl(193,100%,29%);
+}
+.HAN{
+    border: 1px solid white;
+    background-color: hsl(193,100%,28%);
+    height: 50px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+span.ha{
+    font-size: 16px;
+    margin-top: 12px;
+    position: absolute;
+    margin-left: 25px;
+}
+.ha1{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 100px;
+}
+h4.title{
+    color:hsl(193,100%,29%) ;
+    padding-top: 15px;
+}
+.img{
+    position: absolute;
+    margin-top: 12px;
+}
+.img1{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+.vnd{
+    color: white;
+    margin-top: 12px;
+    float: right;
+    margin-right: 30px;
+    font-size: 19px;
+
+}
+h3.thanhtoan{
+    color: hsl(193,100%,29%);
+    padding-top: 15px;
+}
+.nguoi1{
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(193,100%,29%) ;
+}
+.hoten{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.my-2{
+    width:120%;
+}
+.boxxx9{
+    border-radius: 2em;
+    margin: 2em 0;
+    border: none;
+    background-color: blue;
+    color: white;
+    size: 2em;
+}
