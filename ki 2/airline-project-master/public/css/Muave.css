@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font-size: 15px;
+    font-family: "OpenSans";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    background-color: #cccccc;
+}
+h2 {
+    padding-top: 10px;
+}
+.flight-from{
+    margin-left: 20px;
+}
+.flight-from, .flight-to {
+    font-size: 20px;
+}
+th {
+    background-color: #007292;
+    color: white;
+}
+.price-normal{
+    background-color: #7cc7d3;
+    color: white;
+}
+.price-vip{
+    background-color: #86cc5b;
+    color: white;
+}
+.parallax {
+    height: 100%;
+    background-image: url('../img/back-ve.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+.hh{
+    background-color: white;
+}
+
+.btn{
+    margin-top: 20px;
+    float: right;
+    background-color: white;
+    color: #0f8db1;
+    border:2px solid #0f8db1;
+    width: 120px;
+    height: 40px;
+    font-weight: 400;
+}
+.btn:hover{
+    background-color:  #0f8db1;
+    color: white;
+}
+
+.content {
+    height: 100vh;
+    text-align: center;
+}
+.content-done{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.none-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.buy-none{
+    height: 100vh;
+    background-color: white;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.btn-search{
+    border: 2px solid #0f8db1;
+    padding: 5px;
+    margin-top: 30px ;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn-search:hover{
+    outline: none;
+    text-decoration: none;
+    background-color:#0f8db1 ;
+    color: white;
+}
+
